@@ -1,0 +1,36 @@
+{
+    "manifest_version" : 2,
+
+    "name": "CookieSecurity",
+
+    "version": "1.0",
+
+    "description" : "监测cookie安全",
+
+    "icons":
+    {
+        "16": "icon16.png",
+        "48" :"icon48.png",
+        "128":"icon128.png"
+    },
+
+  "browser_action": 
+  {
+    "default_icon": "icon16.png",
+    "default_title": "这是一个监测cookie安全的插件",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "cookies",
+    "http://*/*",
+    "https://*/*"
+
+  ],
+
+  "background": {
+    "scripts": ["getcookie.js"]
+  }
+
+ 
+}
